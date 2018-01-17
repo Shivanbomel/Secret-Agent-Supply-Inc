@@ -58,6 +58,26 @@ h4 {
   margin: 0.25rem 0;
 }
 
+@media only screen and (max-width:470px){
+.main-banner{
+  height: 15rem;
+}
+
+.headline{
+  top:10rem;
+  width:100%;
+  padding: 1rem 2rem;
+}
+
+.headline h4{
+  font-size: 0.77rem;
+}
+
+.headline h1{
+  font-size: 1rem;
+}
+}
+
 nav ul{
   display: flex;
   justify-content: space-between;
@@ -68,6 +88,18 @@ nav ul{
 
 nav{
   background-color: firebrick;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  nav ul{
+    display:none;
+  }
+
+  .menu{
+    display: block;
+    text-align: center;
+  }
 }
 
 .boxes{
@@ -102,6 +134,16 @@ nav{
   display: block;
 }
 
+@media only screen and (max-width: 1024px) {
+  .box{
+    width: 47%;
+  }
+
+  .box.glasses {
+    display: none;
+  }
+}
+
 .info{
   margin-top: 3rem;
   display: flex;
@@ -115,9 +157,32 @@ nav{
 }
 
 span.backg{
-  background-color: yellow;
+  background-color: black;
   color:white;
   padding:1rem 2rem;
+}
+
+
+@media only screen and (max-width:470px) {
+  .box.watch{
+    display: none;
+  }
+
+  .box{
+    width:90%;
+    margin:auto;
+  }
+
+  .rec{
+    width:90%;
+    margin: 0.5rem auto;
+  }
+
+  .boxex,
+  .info{
+    flex-wrap: wrap;
+  }
+
 }
 
 footer{
@@ -126,4 +191,9 @@ footer{
   background-color: black;
   color:white;
   text-align:left;
+}
+@media only screen and (max-width:470px){
+  footer{
+    text-align: center;
+}
 }
